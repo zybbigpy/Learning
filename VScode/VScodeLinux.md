@@ -1,14 +1,14 @@
-# 使用 VScode作为Linux开发工具
+# 使用 VScode作为Linux开发工具 
 
-* [80%] Linux下VScode常用操作
+* 🙂 [80%] Linux下VScode常用操作
 
-* [20%] C/C++ 开发
+* 🙂 [20%] C/C++ 开发
 
 * [TODO] Python 脚本
 
 * [TODO] MarkDown 文本
 
-* [TODO] LaTeX 写作 
+* 🙂 [10%] LaTeX 写作
 
 ## 1. VScode Linux 下常用操作
 
@@ -114,4 +114,8 @@ code -h  // in the terminal you can use this command to show what you can do
 
 ## 3. LaTeX 支持
 
-推荐安装TeXLive2018作为LaTeX 发行版，安装插件LaTeXWorkshop.
+### 3.1 安装 LaTeX 发行版
+
+发行版推荐使用最新的 TeXLive 。可以在清华 tuna 源 CTAN 下载。
+
+请使用 VScode 进行相应的开发。
