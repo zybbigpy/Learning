@@ -8,7 +8,7 @@
 
 * [TODO] MarkDown 文本
 
-* [TODO] LaTeX 写作
+* [TODO] LaTeX 写作 
 
 ## 1. VScode Linux 下常用操作
 
@@ -74,7 +74,7 @@ code -h  // in the terminal you can use this command to show what you can do
 
 3. CTRL + W close file
 
-4. CTRL + K o open folder
+4. CTRL + K O open folder
 
 5. CTRL + TAB swich file in working zone
 
@@ -111,3 +111,7 @@ code -h  // in the terminal you can use this command to show what you can do
 ### 2.3 Clang-Format
 
 ### 2.4 Debugger(GDB)
+
+## 3. LaTeX 支持
+
+推荐安装TeXLive2018作为LaTeX 发行版，安装插件LaTeXWorkshop.
