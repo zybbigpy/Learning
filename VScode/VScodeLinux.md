@@ -116,6 +116,6 @@ code -h  // in the terminal you can use this command to show what you can do
 
 ### 3.1 安装 LaTeX 发行版
 
-发行版推荐使用最新的 TeXLive 。可以在清华 tuna 源 CTAN 下载。
+发行版推荐使用最新的 TeXLive 2018。可以在清华 tuna 源 CTAN 下载。
 
-请使用 VScode 进行相应的开发。
+请使用 VScode 进行相应的开发 !
