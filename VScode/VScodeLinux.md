@@ -119,3 +119,7 @@ code -h  // in the terminal you can use this command to show what you can do
 发行版推荐使用最新的 TeXLive 2018。可以在清华 tuna 源 CTAN 下载。
 
 请使用 VScode 进行相应的开发 !
+
+## 4. Markdown 写作
+
+选择合适的 markdown 写作插件
