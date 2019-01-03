@@ -3,35 +3,36 @@
 <!-- TOC -->
 
 - [使用 VScode作为Linux开发工具](#使用-vscode作为linux开发工具)
-  - [1.1. VScode Linux 下常用操作](#11-vscode-linux-下常用操作)
-    - [1.1.1. 使用终端打开VScode](#111-使用终端打开vscode)
-    - [1.1.2. 常用快捷键](#112-常用快捷键)
-    - [1.1.3. 参考内容](#113-参考内容)
-  - [1.2. C/C++ 开发](#12-cc-开发)
-    - [1.2.1. 开发常用快捷键](#121-开发常用快捷键)
-    - [1.2.2. 插件支持](#122-插件支持)
-    - [1.2.3. 智能感知](#123-智能感知)
-    - [1.2.4. Clang-Format](#124-clang-format)
-    - [1.2.5. Debugger(GDB)](#125-debuggergdb)
-  - [1.3. LaTeX 支持](#13-latex-支持)
-    - [1.3.1. 安装 LaTeX 发行版](#131-安装-latex-发行版)
-    - [1.3.2. LaTeXWorkshop](#132-latexworkshop)
-  - [1.4. Markdown 写作](#14-markdown-写作)
-    - [1.4.1. MarkDown in all 常用快捷键](#141-markdown-in-all-常用快捷键)
+  - [1. VScode Linux 下常用操作](#1-vscode-linux-下常用操作)
+    - [1.1. 使用终端打开VScode](#11-使用终端打开vscode)
+    - [1.2. 常用快捷键](#12-常用快捷键)
+    - [1.3 设置](#13-设置)
+    - [1.4. 参考内容](#14-参考内容)
+  - [2. C/C++ 开发](#2-cc-开发)
+    - [2.1. 开发常用快捷键](#21-开发常用快捷键)
+    - [2.2. 插件支持](#22-插件支持)
+    - [2.3. 智能感知](#23-智能感知)
+    - [2.4. Clang-Format](#24-clang-format)
+    - [2.5. Debugger(GDB)](#25-debuggergdb)
+  - [3. LaTeX 支持](#3-latex-支持)
+    - [3.1. 安装 LaTeX 发行版](#31-安装-latex-发行版)
+    - [3.2. LaTeX Workshop](#32-latex-workshop)
+  - [4. Markdown 写作](#4-markdown-写作)
+    - [4.1. MarkDown in all 常用快捷键](#41-markdown-in-all-常用快捷键)
 
 <!-- /TOC -->
 
-## 1.1. VScode Linux 下常用操作
+## 1. VScode Linux 下常用操作
 
-### 1.1.1. 使用终端打开VScode
+### 1.1. 使用终端打开VScode
 
-```{bash}
-code     // open vscode in the terminal
+```bash
+code     # open vscode in the terminal
 
-code -h  // in the terminal you can use this command to show what you can do
+code -h  # in the terminal you can use this command to show what you can do
 ```
 
-### 1.1.2. 常用快捷键
+### 1.2. 常用快捷键
 
 通用
 
@@ -87,19 +88,23 @@ code -h  // in the terminal you can use this command to show what you can do
 
 4. CTRL + K O Open folder
 
-5. CTRL + TAB Swich file in workingspace
+5. CTRL + TAB Swich file in the workspace
 
-### 1.1.3. 参考内容
+### 1.3 设置
 
-* Microsoft: VScode keyboard shortcuts for Linux / VSCode DOCs
+VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件即可。
+
+### 1.4. 参考内容
+
+- Microsoft: VScode keyboard shortcuts for Linux / VSCode DOCs
   
-* [知乎相关回答链接](https://www.zhihu.com/question/37623310)
+- [知乎相关回答链接](https://www.zhihu.com/question/37623310)
 
-* [一篇不错的英文博客参考](https://scotch.io/bar-talk/my-top-8-visual-studio-code-tips-and-features)
+- [一篇不错的英文博客参考](https://scotch.io/bar-talk/my-top-8-visual-studio-code-tips-and-features)
 
-## 1.2. C/C++ 开发
+## 2. C/C++ 开发
 
-### 1.2.1. 开发常用快捷键
+### 2.1. 开发常用快捷键
 
 查看定义与声明
 
@@ -117,46 +122,96 @@ code -h  // in the terminal you can use this command to show what you can do
 
 3. CRTL + P 输入@(工作文件符号搜索) 输入#(工作目录符号搜索)
 
-### 1.2.2. 插件支持
+### 2.2. 插件支持
 
-* C++ STL Algorithm Mnemonics 强大的 STL 算法模板补全
- 
+- C/C++ Microsoft
+- C++ STL Algorithm Mnemonics 强大的 STL 算法模板补全
 
-### 1.2.3. 智能感知
+### 2.3. 智能感知
 
-### 1.2.4. Clang-Format
+### 2.4. Clang-Format
 
-### 1.2.5. Debugger(GDB)
+### 2.5. Debugger(GDB)
 
-## 1.3. LaTeX 支持
+## 3. LaTeX 支持
 
-### 1.3.1. 安装 LaTeX 发行版
+### 3.1. 安装 LaTeX 发行版
 
 发行版请使用最新的 TeXLive 发行版, 可以在清华 tuna 源 CTAN 下载。
 
-### 1.3.2. LaTeXWorkshop
+### 3.2. LaTeX Workshop
 
-* TODO: 配置编译过程
+- 配置编译过程: 由于默认的编译引擎是 pdflatex, 中文环境需要且切换为xelatex.
+- 出现某多行编辑如以下情况时, 使用 TAB 进入主环境编辑
 
-* 出现某多行编辑如以下情况时, 使用 TAB 进入主环境编辑
+```JSON
+      "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+```
 
-```{LaTeX}
+```LaTeX
 \begin{document|}
-%% press TAB and then write your content here
+%% ``|'' presents cursors, and you can press TAB, cursor will be here and then write your contents.
 \end{document|}
 ```
 
-## 1.4. Markdown 写作
+## 4. Markdown 写作
 
-### 1.4.1. MarkDown in all 常用快捷键
+### 4.1. MarkDown in all 常用快捷键
 
-* 列表快捷键
-  * 子列表 ENTER + TAB
-  * 两次 ENTER 结束列表环境
-* 字体调整快捷键
-  * CTRL + B 加粗
-  * CTRL + I 斜体
-  * ALT + S 删除线
-* 任务栏
-  * ALT + C 完成 / 取消
-* TODO: TOC
+- 列表快捷键
+  - 子列表 ENTER + TAB
+  - 两次 ENTER 结束列表环境
+- 字体调整快捷键
+  - CTRL + B 加粗
+  - CTRL + I 斜体
+  - ALT + S 删除线
+- 任务栏
+  - ALT + C 完成 / 取消
+- 目录 (设置中打开Github支持, 使用插件 Markdown TOC)
+  - 当前该插件有小问题：解决方案将换行设置eol从auto改为\n 。
