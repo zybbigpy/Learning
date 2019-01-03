@@ -1,5 +1,7 @@
 # 使用 VScode作为Linux开发工具
 
+@[TOC]
+
 * 🙂 [80%] Linux下VScode常用操作
 
 * 🙂 [20%] C/C++ 开发
