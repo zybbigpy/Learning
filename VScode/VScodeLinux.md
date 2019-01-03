@@ -1,20 +1,29 @@
 # 使用 VScode作为Linux开发工具
 
-@[TOC]
+<!-- TOC -->
 
-* 🙂 [80%] Linux下VScode常用操作
+- [使用 VScode作为Linux开发工具](#使用-vscode作为linux开发工具)
+  - [1.1. VScode Linux 下常用操作](#11-vscode-linux-下常用操作)
+    - [1.1.1. 使用终端打开VScode](#111-使用终端打开vscode)
+    - [1.1.2. 常用快捷键](#112-常用快捷键)
+    - [1.1.3. 参考内容](#113-参考内容)
+  - [1.2. C/C++ 开发](#12-cc-开发)
+    - [1.2.1. 开发常用快捷键](#121-开发常用快捷键)
+    - [1.2.2. 插件支持](#122-插件支持)
+    - [1.2.3. 智能感知](#123-智能感知)
+    - [1.2.4. Clang-Format](#124-clang-format)
+    - [1.2.5. Debugger(GDB)](#125-debuggergdb)
+  - [1.3. LaTeX 支持](#13-latex-支持)
+    - [1.3.1. 安装 LaTeX 发行版](#131-安装-latex-发行版)
+    - [1.3.2. LaTeXWorkshop](#132-latexworkshop)
+  - [1.4. Markdown 写作](#14-markdown-写作)
+    - [1.4.1. MarkDown in all 常用快捷键](#141-markdown-in-all-常用快捷键)
 
-* 🙂 [20%] C/C++ 开发
+<!-- /TOC -->
 
-* [TODO] Python 脚本
+## 1.1. VScode Linux 下常用操作
 
-* [TODO] MarkDown 文本
-
-* 🙂 [10%] LaTeX 写作
-
-## 1. VScode Linux 下常用操作
-
-### 1.1 使用终端打开VScode
+### 1.1.1. 使用终端打开VScode
 
 ```{bash}
 code     // open vscode in the terminal
@@ -22,7 +31,7 @@ code     // open vscode in the terminal
 code -h  // in the terminal you can use this command to show what you can do
 ```
 
-### 1.2 常用快捷键
+### 1.1.2. 常用快捷键
 
 通用
 
@@ -80,7 +89,7 @@ code -h  // in the terminal you can use this command to show what you can do
 
 5. CTRL + TAB Swich file in workingspace
 
-### 参考内容
+### 1.1.3. 参考内容
 
 * Microsoft: VScode keyboard shortcuts for Linux / VSCode DOCs
   
@@ -88,9 +97,9 @@ code -h  // in the terminal you can use this command to show what you can do
 
 * [一篇不错的英文博客参考](https://scotch.io/bar-talk/my-top-8-visual-studio-code-tips-and-features)
 
-## 2. C/C++ 开发
+## 1.2. C/C++ 开发
 
-### 2.1 开发常用快捷键
+### 1.2.1. 开发常用快捷键
 
 查看定义与声明
 
@@ -108,24 +117,24 @@ code -h  // in the terminal you can use this command to show what you can do
 
 3. CRTL + P 输入@(工作文件符号搜索) 输入#(工作目录符号搜索)
 
-### 2.2 插件支持
+### 1.2.2. 插件支持
 
 * C++ STL Algorithm Mnemonics 强大的 STL 算法模板补全
  
 
-### 2.3 智能感知
+### 1.2.3. 智能感知
 
-### 2.4 Clang-Format
+### 1.2.4. Clang-Format
 
-### 2.5 Debugger(GDB)
+### 1.2.5. Debugger(GDB)
 
-## 3. LaTeX 支持
+## 1.3. LaTeX 支持
 
-### 3.1 安装 LaTeX 发行版
+### 1.3.1. 安装 LaTeX 发行版
 
 发行版请使用最新的 TeXLive 发行版, 可以在清华 tuna 源 CTAN 下载。
 
-### 3.2 LaTeXWorkshop
+### 1.3.2. LaTeXWorkshop
 
 * TODO: 配置编译过程
 
@@ -137,9 +146,9 @@ code -h  // in the terminal you can use this command to show what you can do
 \end{document|}
 ```
 
-## 4. Markdown 写作
+## 1.4. Markdown 写作
 
-### 4.1 MarkDown in all 常用快捷键
+### 1.4.1. MarkDown in all 常用快捷键
 
 * 列表快捷键
   * 子列表 ENTER + TAB
