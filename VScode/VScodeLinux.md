@@ -17,8 +17,12 @@
   - [3. LaTeX 支持](#3-latex-支持)
     - [3.1. 安装 LaTeX 发行版](#31-安装-latex-发行版)
     - [3.2. LaTeX Workshop](#32-latex-workshop)
-  - [4. Markdown 写作](#4-markdown-写作)
+    - [3.3 编辑论文中出现的一些情况](#33-编辑论文中出现的一些情况)
+      - [光标问题](#光标问题)
+    - [3.4 参考内容](#34-参考内容)
+  - [4. MarkDown 写作](#4-markdown-写作)
     - [4.1. MarkDown in all 常用快捷键](#41-markdown-in-all-常用快捷键)
+  - [5.Python 开发](#5python-开发)
 
 <!-- /TOC -->
 
@@ -74,21 +78,21 @@ code -h  # in the terminal you can use this command to show what you can do
 
 2. CTRL + B 侧边显示/隐藏
 
-3. CTRL + K  V MarkDown 侧边预览
+3. CTRL + K, V MarkDown 侧边预览
 
-4. CTRL + 1/2/3... 切换工作分屏区
+4. CTRL + 1/2/3... 切换工作区
 
 文件
 
-1. CTRL + N New File
+1. CTRL + N 创建新文件
 
-2. CTRL + O Open File
+2. CTRL + O 打开文件
 
-3. CTRL + W Close file
+3. CTRL + W 关闭文件
 
-4. CTRL + K O Open folder
+4. CTRL + ( K, O ) 打开文件
 
-5. CTRL + TAB Swich file in the workspace
+5. CTRL + TAB 工作区切换文件
 
 ### 1.3 设置
 
@@ -124,25 +128,33 @@ VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件
 
 ### 2.2. 插件支持
 
-- C/C++ Microsoft
+- C/C++ Microsoft IntelliSence
 - C++ STL Algorithm Mnemonics 强大的 STL 算法模板补全
 
 ### 2.3. 智能感知
 
+TODO
+
 ### 2.4. Clang-Format
 
+TODO
+
 ### 2.5. Debugger(GDB)
+
+TODO
 
 ## 3. LaTeX 支持
 
 ### 3.1. 安装 LaTeX 发行版
 
-发行版请使用最新的 TeXLive 发行版, 可以在清华 tuna 源 CTAN 下载。
+发行版请使用最新的 TeXLive 发行版, 可以在清华 tuna 源 CTAN 下载镜像文件。
 
 ### 3.2. LaTeX Workshop
 
 - 配置编译过程: 由于默认的编译引擎是 pdflatex, 中文环境需要且切换为xelatex.
 - 出现某多行编辑如以下情况时, 使用 TAB 进入主环境编辑
+
+相应的JSON 设置
 
 ```JSON
       "latex-workshop.latex.tools": [
@@ -194,13 +206,21 @@ VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件
     ],
 ```
 
+### 3.3 编辑论文中出现的一些情况
+
+#### 光标问题
+
 ```LaTeX
 \begin{document|}
 %% ``|'' presents cursors, and you can press TAB, cursor will be here and then write your contents.
 \end{document|}
 ```
 
-## 4. Markdown 写作
+### 3.4 参考内容
+
+- [知乎相关专栏链接](https://zhuanlan.zhihu.com/p/38178015)
+
+## 4. MarkDown 写作
 
 ### 4.1. MarkDown in all 常用快捷键
 
@@ -215,3 +235,5 @@ VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件
   - ALT + C 完成 / 取消
 - 目录 (设置中打开Github支持, 使用插件 Markdown TOC)
   - 当前该插件有小问题：解决方案将换行设置eol从auto改为\n 。
+
+## 5.Python 开发
