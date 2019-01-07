@@ -19,10 +19,12 @@
     - [3.2. LaTeX Workshop](#32-latex-workshop)
     - [3.3 编辑论文中出现的一些情况](#33-编辑论文中出现的一些情况)
       - [光标问题](#光标问题)
+      - [TODO 中文路径问题](#todo-中文路径问题)
     - [3.4 参考内容](#34-参考内容)
   - [4. MarkDown 写作](#4-markdown-写作)
     - [4.1. MarkDown in all 常用快捷键](#41-markdown-in-all-常用快捷键)
-  - [5.Python 开发](#5python-开发)
+  - [5. Python 开发](#5-python-开发)
+  - [6. Git 版本控制](#6-git-版本控制)
 
 <!-- /TOC -->
 
@@ -97,6 +99,7 @@ code -h  # in the terminal you can use this command to show what you can do
 ### 1.3 设置
 
 VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件即可。
+TODO 多终端同时配置vscode
 
 ### 1.4. 参考内容
 
@@ -216,6 +219,8 @@ TODO
 \end{document|}
 ```
 
+#### TODO 中文路径问题
+
 ### 3.4 参考内容
 
 - [知乎相关专栏链接](https://zhuanlan.zhihu.com/p/38178015)
@@ -236,4 +241,6 @@ TODO
 - 目录 (设置中打开Github支持, 使用插件 Markdown TOC)
   - 当前该插件有小问题：解决方案将换行设置eol从auto改为\n 。
 
-## 5.Python 开发
+## 5. Python 开发
+
+## 6. Git 版本控制
