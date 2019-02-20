@@ -12,7 +12,7 @@
 
 ```bash
 tar -cvf name.tar ./* # 压缩当前文件夹作为tar包
-tar -zvf name.tar     # 解压tar包至当前位置
+tar -xvf name.tar     # 解压tar包至当前位置
 ```
 
 ## 2. ssh远程登陆与scp传送文件
