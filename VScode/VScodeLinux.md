@@ -245,3 +245,5 @@ TODO
 ## 5. Python 开发
 
 ## 6. Git 版本控制
+
+插件说明Gitlens
