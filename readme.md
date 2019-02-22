@@ -49,3 +49,4 @@
 * [ ] ICS - PA
 * [ ] PySCF 计算尝试
 * [ ] Dr Quansheng Wu's Wanner Tools
+* [x] git学习尝试
