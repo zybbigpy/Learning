@@ -100,7 +100,7 @@ code -h  # in the terminal you can use this command to show what you can do
 
 VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件即可。
 
-多终端同时配置 VScode 可以使用 [Syncing](https://github.com/nonoroazoro/vscode-syncing/blob/master/README.zh-CN.md) 这款插件我的Gist：be487c3ba582fe7b31a4127c45b4184b8a5f3022。
+多终端同时配置 VScode 可以使用 [Syncing](https://github.com/nonoroazoro/vscode-syncing/blob/master/README.zh-CN.md) 这款插件，我的Gist：be487c3ba582fe7b31a4127c45b4184b8a5f3022。
 
 ### 1.4. 参考内容
 
