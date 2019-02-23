@@ -6,6 +6,7 @@
   * 基本语法不易理解的几个特征
   * C++ 11 容器
   * C++ 11 / 14 /17 易用语法特性
+  * Clang-format的使用
 * **GNU Linux**  
   * Linux 下 C / C++ 编译工具 gcc / g++
   * Linux 下的自动构建工具 make
@@ -36,6 +37,7 @@
 * [ ]  阅读 Unix 环境编程 ( 操作系统课程 )
 * [ ]  深入理解计算机系统
 * [ ]  [Linux C 一站式学习](http://akaedu.github.io/book/)
+* [ ]  GitPro 第2-5章 (已经review一遍)
 
 ### 物理方面
 
