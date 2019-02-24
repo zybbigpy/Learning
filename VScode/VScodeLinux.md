@@ -92,7 +92,7 @@ code -h  # in the terminal you can use this command to show what you can do
 
 3. `CTRL` + `W` 关闭文件
 
-4. `CTRL` + ( `K`, `O` ) 打开文件
+4. `CTRL` + ( `K`, `O` ) 打开文件夹
 
 5. `CTRL` + `TAB` 工作区切换文件
 
@@ -104,7 +104,7 @@ VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件
 
 ### 1.4. 参考内容
 
-- Microsoft: VScode keyboard shortcuts for Linux / VSCode DOCs
+- [Microsoft: VScode keyboard shortcuts for Linux / VSCode DOCs](https://code.visualstudio.com/docs)
   
 - [知乎相关回答链接](https://www.zhihu.com/question/37623310)
 
