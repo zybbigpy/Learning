@@ -35,13 +35,13 @@
 
 ### 计算机方面
 
-* [ ]  观看侯捷的 C++ 高级面向对象与 C++ 11 课程
-* [ ]  阅读 Effective C++
-* [ ]  阅读 C++ Primer： 熟悉前几个章节
-* [ ]  阅读 Unix 环境编程 ( 操作系统课程 )
-* [ ]  深入理解计算机系统
-* [ ]  [Linux C 一站式学习](http://akaedu.github.io/book/)
-* [ ]  GitPro 第2-5章 (已经review一遍)
+* [ ] 观看侯捷的 C++ 高级面向对象与 C++ 11 课程
+* [ ] 阅读 Effective C++
+* [ ] 阅读 C++ Primer： 熟悉前几个章节
+* [ ] 阅读 Unix 环境编程 ( 操作系统课程 )
+* [ ] 深入理解计算机系统
+* [ ] [Linux C 一站式学习](http://akaedu.github.io/book/)
+* [x] GitPro 第2-5章 (已经review一遍)
 
 ### 物理方面
 
@@ -57,3 +57,4 @@
 * [x] git学习尝试
 * [ ] Dr. Quansheng Wu's WannierTools
 * [ ] [有关AVL讨论](https://www.zhihu.com/question/30527705)
+* [ ] 使用 NumCpp 搭建一个简单的计算框架
