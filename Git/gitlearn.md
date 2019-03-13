@@ -17,6 +17,7 @@
       - [推送远程分支](#推送远程分支)
       - [拉取远程分支](#拉取远程分支)
       - [切换到远程某分支](#切换到远程某分支)
+      - [删除远程分支](#删除远程分支)
     - [本地分支](#本地分支)
     - [解析远程拉取](#解析远程拉取)
   - [团队开发](#团队开发)
@@ -118,6 +119,12 @@ git checkout orgin/dev
 git checkout -b dev
 ```
 
+#### 删除远程分支
+
+```bash
+git push origin --delete <branchName>
+```
+
 ### 本地分支
 
 使用 `git branch -a`检查所有的分支信息。
@@ -130,7 +137,7 @@ git checkout -b dev
 
 更准确地说，`git pull` 使用给定的参数运行 `git fetch`，并调用 `git merge`将检索到的分支头合并到当前分支中。 使用 `--rebase` ，它运行 `git rebase` 而不是 `git merge` 。
 
-以下是一些示例 
+以下是一些示例:
 
 ```bash
 git pull <远程主机名> <远程分支名>:<本地分支名>
