@@ -241,6 +241,8 @@ git pull origin master
 
 ### 1.5.2. tag功能与版本发布
 
+TODO:
+
 ### 1.5.3. 进行Bug修复时使用暂存功能
 
 熟练使用 ```git stash``` 与 ```git stash pop``` 功能来暂时放下手头的工作，同时新建 `bug` 分支来修复问题。
@@ -252,4 +254,3 @@ git pull origin master
 2. Git Pro 书籍
 
 3. 廖雪峰的Git教学
-8
