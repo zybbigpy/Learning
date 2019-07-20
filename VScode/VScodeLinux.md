@@ -143,7 +143,89 @@ TODO:
 
 ### 1.2.4. Clang-Format
 
-TODO:
+Clang-format 是LLVM项目下格式化代码的工具, 通常情况下, 在vscode中C/C++插件中包含了Clang-format工具, 默认的格式化方式是Visual Studio格式. 在Linux开发环境下我们通常使用LLVM格式. 在vscode的设置中搜寻format, 更改格式即可.
+
+如果需要自定义的格式化方式, 你需要在当前工作目录下设置.clangformat文件, 通过配置该文件, clang-format可以完成自动配置
+
+ 
+
+```bash
+# 基于那个配置文件
+BasedOnStyle: LLVM
+# 访问说明符的偏移(public private)
+AccessModifierOffset: -4
+# 括号之后,水平对齐参数: Align DontAlign AlwaysBreak
+AlignAfterOpenBracket: Align
+# 连续的赋值时,对齐所有的等号
+AlignConsecutiveAssignments: true
+# 连续声明时，对齐所有声明的变量名
+AlignConsecutiveDeclarations: true
+# 左对齐换行(使用反斜杠换行)的反斜杠 
+AlignEscapedNewlinesLeft: true
+# 水平对齐二元和三元表达式的操作数 
+AlignOperands: true
+# 对齐连续的尾随的注释  
+AlignTrailingComments: true
+# 允许函数声明的所有参数在放在下一行  
+AllowAllParametersOfDeclarationOnNextLine: true
+# 允许短的块放在同一行  
+AllowShortBlocksOnASingleLine : false
+# 允许短的case标签放在同一行
+AllowShortCaseLabelsOnASingleLine: false
+# 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All 
+AllowShortFunctionsOnASingleLine: Empty
+# 是否允许短if单行 If true, if (a) return; 可以放到同一行
+AllowShortIfStatementsOnASingleLine: false
+# 允许短的循环保持在同一行   
+AllowShortLoopsOnASingleLine: false 
+# 总是在定义返回类型后换行(deprecated)   
+AlwaysBreakAfterDefinitionReturnType: None
+# 每行字符的限制，0表示没有限制  
+ColumnLimit: 100
+# 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变
+CommentPragmas: '^ IWYU pragma:'
+# 语言: None Cpp Java Objc Protp
+Language: Cpp 
+#指针的*的挨着哪边
+PointerAlignment: Right
+#缩进宽度
+IndentWidth: 4
+# 连续的空行保留几行
+MaxEmptyLinesToKeep: 1
+# 在 @property 后面添加空格, \@property (readonly) 而不是 \@property(readonly).
+ObjCSpaceAfterProperty: true
+# OC block后面的缩进
+ObjCBlockIndentWidth: 4
+# 是否允许短方法单行
+AllowShortFunctionsOnASingleLine: false
+# 换行的时候对齐操作符
+#AlignOperands: true
+# 中括号两边空格 [] 
+SpacesInSquareBrackets: true
+# 小括号两边添加空格
+SpacesInParentheses : false
+#等号两边的空格
+SpaceBeforeAssignmentOperators: true
+# 容器类的空格 例如 OC的字典
+SpacesInContainerLiterals: true
+#缩进
+IndentWrappedFunctionNames: true
+#在block从空行开始
+KeepEmptyLinesAtTheStartOfBlocks: true
+#在构造函数初始化时按逗号断行，并以冒号对齐
+BreakConstructorInitializersBeforeComma: true
+#括号后添加空格
+SpaceAfterCStyleCast: false
+# 允许排序#include, 造成编译错误
+# SortIncludes: true 
+# 缩进case 标签
+IndentCaseLabels: true 
+#tab键盘的宽度
+TabWidth: 4
+UseTab: Never
+```
+
+参考[腾讯云博客](https://cloud.tencent.com/developer/article/1394078)
 
 ### 1.2.5. Debugger(GDB)
 
