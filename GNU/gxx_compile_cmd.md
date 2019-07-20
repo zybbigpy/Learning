@@ -2,7 +2,7 @@
 
 ## 检查你的gcc与g++版本
 
-在命令行中输入以下指令来检查你的gcc版本. 检查版本有助于解决源代码的编译依赖.
+在命令行中输入以下指令来检查你的gcc版本. 检查版本有助于解决源代码的编译依赖. 在Makefile与CMakeList中可以直接指定编译器的绝对路径来使用指定的编译器版本.
 
 ```bash
 gcc -v # check your gcc or g++ version. path maybe : /usr/bin/gcc 
@@ -27,8 +27,6 @@ gcc -v # check your gcc or g++ version. path maybe : /usr/bin/gcc
 -E #只激活预处理，不生成文档，需要把他重定向到一个输出文档里。
 -o #定制目标名称，缺省的时候gcc 编译出来的文档是a.out
 -ansi #关闭gnu c中和ansi c不兼容的特性，激活ansi c的专有特性。
--Dmacro #相当于C语言中的#define macro -Dmacro=defn：相当于C语言中的#define macro=defn
--Umacro #当于C语言中的#undef macro-Idir：指定头文件路径。
 -llibrary #指定库-Ldir：定制编译的时候，搜索库的路径。
 -g #指示编译器，在编译的时候，产生调试信息.
 -static #此选项将禁止使用动态库，所以，编译出来的东西，一般都很大。
@@ -38,14 +36,9 @@ gcc -v # check your gcc or g++ version. path maybe : /usr/bin/gcc
 -std #指定C标准，如-std=c99使用c99标准，-std=gnu99，使用C99 再加上 GNU 的一些扩展
 ```
 
-下面会对这些编译选项做进一步的说明 .
-
-### 编译警告
-
 
 ### 链接库(静态, 动态)
 
-
 ### 调试信息
 
-## cmake中的编译选项设置
+### 源代码中使用 #program 宏改变gcc的行为
