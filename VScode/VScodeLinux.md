@@ -147,8 +147,6 @@ Clang-format 是LLVM项目下格式化代码的工具, 通常情况下, 在vscod
 
 如果需要自定义的格式化方式, 你需要在当前工作目录下设置.clangformat文件, 通过配置该文件, clang-format可以完成自动配置
 
- 
-
 ```bash
 # 基于那个配置文件
 BasedOnStyle: LLVM
@@ -160,9 +158,9 @@ AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: true
 # 连续声明时，对齐所有声明的变量名
 AlignConsecutiveDeclarations: true
-# 左对齐换行(使用反斜杠换行)的反斜杠 
+# 左对齐换行(使用反斜杠换行)的反斜杠
 AlignEscapedNewlinesLeft: true
-# 水平对齐二元和三元表达式的操作数 
+# 水平对齐二元和三元表达式的操作数
 AlignOperands: true
 # 对齐连续的尾随的注释  
 AlignTrailingComments: true
@@ -172,20 +170,20 @@ AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine : false
 # 允许短的case标签放在同一行
 AllowShortCaseLabelsOnASingleLine: false
-# 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All 
+# 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All
 AllowShortFunctionsOnASingleLine: Empty
 # 是否允许短if单行 If true, if (a) return; 可以放到同一行
 AllowShortIfStatementsOnASingleLine: false
-# 允许短的循环保持在同一行   
-AllowShortLoopsOnASingleLine: false 
-# 总是在定义返回类型后换行(deprecated)   
+# 允许短的循环保持在同一行
+AllowShortLoopsOnASingleLine: false
+# 总是在定义返回类型后换行(deprecated)
 AlwaysBreakAfterDefinitionReturnType: None
 # 每行字符的限制，0表示没有限制  
 ColumnLimit: 100
 # 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变
 CommentPragmas: '^ IWYU pragma:'
 # 语言: None Cpp Java Objc Protp
-Language: Cpp 
+Language: Cpp
 #指针的*的挨着哪边
 PointerAlignment: Right
 #缩进宽度
@@ -200,7 +198,7 @@ ObjCBlockIndentWidth: 4
 AllowShortFunctionsOnASingleLine: false
 # 换行的时候对齐操作符
 #AlignOperands: true
-# 中括号两边空格 [] 
+# 中括号两边空格 []
 SpacesInSquareBrackets: true
 # 小括号两边添加空格
 SpacesInParentheses : false
@@ -217,15 +215,18 @@ BreakConstructorInitializersBeforeComma: true
 #括号后添加空格
 SpaceAfterCStyleCast: false
 # 允许排序#include, 造成编译错误
-# SortIncludes: true 
+# SortIncludes: true
 # 缩进case 标签
-IndentCaseLabels: true 
+IndentCaseLabels: true
 #tab键盘的宽度
 TabWidth: 4
 UseTab: Never
 ```
 
-参考[腾讯云博客](https://cloud.tencent.com/developer/article/1394078)
+参考
+
+1. [腾讯云博客](https://cloud.tencent.com/developer/article/1394078)
+2. [Clang-format说明文档](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
 
 ### 1.2.5. Debugger(GDB)
 
