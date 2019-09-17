@@ -100,9 +100,9 @@ code -h  # in the terminal you can use this command to show what you can do
 
 ### 1.1.3. 设置
 
-VScode 的设置是基于JSON 文件的设置，因此修改相应的JSON 文件即可。
+VScode 的设置是基于JSON 文件的设置,因此修改相应的JSON 文件即可。
 
-多终端同时配置 VScode 可以使用 [Syncing](https://github.com/nonoroazoro/vscode-syncing/blob/master/README.zh-CN.md) 这款插件，我的Gist：be487c3ba582fe7b31a4127c45b4184b8a5f3022。
+多终端同时配置 VScode 可以使用 [Syncing](https://github.com/nonoroazoro/vscode-syncing/blob/master/README.zh-CN.md) 这款插件,我的Gist：be487c3ba582fe7b31a4127c45b4184b8a5f3022。
 
 ### 1.1.4. 参考内容
 
@@ -156,7 +156,7 @@ AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 # 连续的赋值时,对齐所有的等号
 AlignConsecutiveAssignments: true
-# 连续声明时，对齐所有声明的变量名
+# 连续声明时,对齐所有声明的变量名
 AlignConsecutiveDeclarations: true
 # 左对齐换行(使用反斜杠换行)的反斜杠
 AlignEscapedNewlinesLeft: true
@@ -170,7 +170,7 @@ AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine : false
 # 允许短的case标签放在同一行
 AllowShortCaseLabelsOnASingleLine: false
-# 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All
+# 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中,空函数), All
 AllowShortFunctionsOnASingleLine: Empty
 # 是否允许短if单行 If true, if (a) return; 可以放到同一行
 AllowShortIfStatementsOnASingleLine: false
@@ -178,9 +178,9 @@ AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
 # 总是在定义返回类型后换行(deprecated)
 AlwaysBreakAfterDefinitionReturnType: None
-# 每行字符的限制，0表示没有限制  
+# 每行字符的限制,0表示没有限制  
 ColumnLimit: 100
-# 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变
+# 描述具有特殊意义的注释的正则表达式,它不应该被分割为多行或以其它方式改变
 CommentPragmas: '^ IWYU pragma:'
 # 语言: None Cpp Java Objc Protp
 Language: Cpp
@@ -210,7 +210,7 @@ SpacesInContainerLiterals: true
 IndentWrappedFunctionNames: true
 #在block从空行开始
 KeepEmptyLinesAtTheStartOfBlocks: true
-#在构造函数初始化时按逗号断行，并以冒号对齐
+#在构造函数初始化时按逗号断行,并以冒号对齐
 BreakConstructorInitializersBeforeComma: true
 #括号后添加空格
 SpaceAfterCStyleCast: false
