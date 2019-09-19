@@ -237,7 +237,7 @@ git pull origin master
 
 6. 创建从你的fork的$my_feature_branch分支到主项目的**dev**分支的[Pull Request]。
 
-7. 等待review, 需要继续改进,或者被Merge!
+7. 等待review, 需要继续改进, 或者被Merge!
 
 ### 1.5.2. tag功能与版本发布
 
