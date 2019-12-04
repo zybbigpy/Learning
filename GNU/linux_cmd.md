@@ -50,6 +50,7 @@ ssh 免密登陆:
 authorized_key 文件中. 首次登陆使用私钥登陆:
 
 ```bash
+# -i 使用私钥
 ssh -p port_number usrname@ipaddr -i secret_key
 ```
 
@@ -64,7 +65,6 @@ Host wqmiao_delta             # 别名
     User wqmiao               # user name
     Port 4693                 # port
 ```
-
 
 ## 1.3. 文件查询与匹配
 
@@ -127,4 +127,3 @@ export PATH=$PATH:路径1:路径2:...:路径n
 路径使用冒号进行分隔.  `/etc/profile`此文件为系统所有用户设置环境信息, 需要
 root权限.当shell是交互式登录shell时,读取`.bash_profile`文件,
 如在系统启动、远程登录或使用su -切换用户时; 当shell是交互式登录和非登录shell时都会读取`.bashrc`文件,如：在图形界面中打开新终端或使用su切换用户时,均属于非登录shell的情况。简单的说,`.bash_profile`只在会话开始时被读取一次,而`.bashrc`则每次打开新的终端时,都会被读取. 使用`env`命令可以显示当前全部的环境变量.
-
