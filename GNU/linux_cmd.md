@@ -25,7 +25,6 @@ tar -czvf name.tar ./*  # 创建tar.gz
 tar -xzvf name.tar      # 解压tar.gz
 ```
 
-
 ## 1.2. 远程登陆与传送获取文件
 
 ```bash
@@ -33,20 +32,10 @@ tar -xzvf name.tar      # 解压tar.gz
 ssh usrname@ipaddr
 # 指定端口号
 ssh -p port_number usrname@ipaddr
-# 向远程传送文件
-scp name.tar username@ipaddr:/mwq/working_directory
-# 指定端口号
-scp -P port
-# 获取远程文件
-TODO:
-# 通过url获得文件
-wget [url]
-# curl的使用
-TODO:
 ```
 
 ssh 免密登陆:
-首先使用ssh-keygen在本地生成公钥和私钥, 将公钥追加在远程服务器.ssh文件下的
+首先使用ssh-keygen在本地生成公钥和私钥, 将公钥*追加*在远程服务器.ssh文件下的
 authorized_key 文件中. 首次登陆使用私钥登陆:
 
 ```bash
@@ -64,6 +53,21 @@ Host wqmiao_delta             # 别名
     HostName 159.226.35.226   # IP
     User wqmiao               # user name
     Port 4693                 # port
+```
+
+有时候还需要进行文件传输:
+
+```bash
+# 向远程传送文件
+scp name.tar username@ipaddr:/mwq/working_directory
+# 指定端口号
+scp -P port
+# 获取远程文件夹至本地文件夹
+scp -r username@ipaddr:/mwq/directory_you_need ./
+# 通过url获得文件r
+wget [url]
+# curl的使用
+TODO:
 ```
 
 ## 1.3. 文件查询与匹配
@@ -100,9 +104,11 @@ ls | grep -v html | xargs mv -t ./nonhtml
 
 ### 1.3.4. 命令组合与高级连用(xargs与管道)
 
+TODO:
 
 ## 1.4. 进程相关
 
+TODO:
 
 ## 1.5. 环境变量
 
