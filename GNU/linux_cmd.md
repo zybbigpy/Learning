@@ -115,8 +115,10 @@ TODO:
 
 ## 1.5. 环境变量
 
+使用`env` 可以显示当前的环境变量, `set`则包含更多的全局, 局部环境变量.
+
 通常可以使用`export`仅在当前shell中添加环境变量. 如果希望该环境变量对于
-某用户有效需要修改`$HOME`目录下的`.bashrc`文件. 并使用`source`指令读取`.bahsrc`
+某用户*长期*有效需要修改`$HOME`目录下的`.bashrc`文件. 并使用`source`指令读取`.bahsrc`
 文件. 不同于在shell中直接`bash xx.sh`, `source`指令并不会开启一个子进程(子shell),因此对当前shell有效.
 
 通常我们常用的一些环境变量有如下这些:
@@ -127,7 +129,7 @@ TODO:
 4. `LD_LIBRARY_PATH`: 动态链接库路径
 5. `LIBRARY_PATH`: 静态链接库路径
 
-往往在linux系统中安装软件后需要更新`$PATH`目录, 在`.bashrc`中增加下方代码:
+往往在linux系统中安装软件后需要更新`$PATH`目录(逗号分隔), 在`.bashrc`中增加下方代码:
 
 ```bash
 export PATH=$PATH:路径1:路径2:...:路径n
