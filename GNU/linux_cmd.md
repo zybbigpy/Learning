@@ -62,7 +62,7 @@ Host wqmiao_delta             # 别名
 # 向远程传送文件
 scp name.tar username@ipaddr:/mwq/working_directory
 # 指定端口号
-scp -P port
+scp -P port name.tar username@ipaddr:/mwq/working_directory
 # 获取远程文件夹至本地文件夹
 scp -r username@ipaddr:/mwq/directory_you_need ./
 # 通过url获得文件r
@@ -123,7 +123,7 @@ TODO:
 
 通常我们常用的一些环境变量有如下这些:
 
-1. `$HOME`: 显示当前用户路径
+1. `$HOME`: 显示当前径
 2. `$PWD`: 当前工作路径
 3. `$PATH`: 可执行程序安装路径
 4. `LD_LIBRARY_PATH`: 动态链接库路径
